@@ -68,12 +68,12 @@
 		font-family: 'Gowun Dodum', sans-serif;
 	}
 	
-	.refreshbutton {
+	#refreshbutton {
 		width:16px;
 		height:16px;
 		transition-property: transform, width, height;
 		transition-duration: 1s;
-	.refreshbutton:hover {
+	#refreshbutton:hover {
 		width:18px;
 		height:18px;
 		transform:rotate(360deg);
@@ -817,7 +817,7 @@
 										
 										<div style="display:none" class="thankyou_message">
  										<p><span class="colorlib-text">yh273@naver.com</a></span> 으로 메일이 전송되었습니다.<br>
-										감사합니다. <input type="image" src="images/refreshbutton16.jpg" class="refreshbutton" value="새로고침" onclick="refreshpage();"> </p>
+										감사합니다. <input type="image" id="refreshbutton" src="images/refreshbutton16.jpg" value="새로고침" onclick="refreshpage();"> </p>
 										</div>
 									</form>
 								</div>
