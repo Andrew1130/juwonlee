@@ -57,6 +57,10 @@
 			document.getElementById('colorlib-main').scrollIntoView();
 			location.reload()
 		}
+
+		$("#pswork1").on("click", function(){
+    		window.open("popup1.html", "photoshop_image_1", "width=300, height=400, left=300, top=50");
+		});
 	</script>
 		
 	<style>
@@ -335,6 +339,7 @@
 					<div class="row">
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 							<ul>
+								<li class = "GowunDodum">자바스크립트의 문법을 알고 있습니다. 제이쿼리의 선택자, 이벤트에 대해 알고 있습니다. 제이쿼리 플러그인을 활용해 보았습니다.</li>
 								<li class = "GowunDodum">파이썬의 자료형, 제어문, 함수에 대해 알고 있습니다. 장고로 게시판 클론 코딩을 해 보았습니다. git/github/aws 라이트세일을 통해 만든 게시판을 공개해 보았습니다.</li>
 								<li class = "GowunDodum">HTML 태그, CSS 스타일 및 사용법에 대해 알고 있습니다. 미디어 쿼리를 활용하여 반응형 웹 사이트를 만들어 보았습니다.  
 								<li class = "GowunDodum">포토샵, 일러스트의 사용법을 알고 있습니다. 포토샵/일러스트의 기능들을 활용해 다양한 합성물을 제작해 보았습니다. 
@@ -679,7 +684,7 @@
 										<span>#합성 #필터</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-eye" id="pswork1"></i> 100</a></span>
 											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
 										</p>
 									</div>
