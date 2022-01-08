@@ -48,7 +48,9 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-		
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script data-cfasync="false" type="text/javascript"
   src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>	
 		
@@ -57,10 +59,16 @@
 			document.getElementById('colorlib-main').scrollIntoView();
 			location.reload()
 		}
-
-		$("#pswork1").on("click", function(){
-    		window.open("popup1.html", "photoshop_image_1", "width=300, height=400, left=300, top=50");
+		$(function() {
+			$("#pswork1").on("click", function(){
+				window.open("popup1.html", "photoshop_image_1", "width=980px, height=600px, left=300, top=50");
+			});
 		});
+		$(function() {
+			$("#pswork2").on("click", function(){
+				window.open("popup2.html", "photoshop_image_2", "width=533px, height=490px, left=300, top=50");
+			});
+		});		
 	</script>
 		
 	<style>
@@ -681,10 +689,12 @@
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Photoshop Work</a></h3>
-										<span>#합성 #필터</span>
+										<button type="button" class="btn btn-Secondary btn-sm" id="pswork1">
+											<strong>전체보기</strong>
+										</button>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye" id="pswork1"></i> 100</a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
 											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
 										</p>
 									</div>
@@ -696,7 +706,9 @@
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">illust Work</a></h3>
-										<span>#클리핑마스크 #컴파운드패스</span>
+										<button type="button" class="btn btn-Secondary btn-sm" id="pswork2">
+											<strong>전체보기</strong>
+										</button>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
 											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
