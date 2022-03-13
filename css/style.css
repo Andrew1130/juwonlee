@@ -381,7 +381,7 @@ body.offcanvas {
 .colorlib-services,
 .colorlib-contact {
   padding-top: 4em;
-  padding-bottom: 9em;
+  padding-bottom: 6em;
   clear: both;
   width: 100%;
   display: block; }
@@ -396,6 +396,13 @@ body.offcanvas {
     .colorlib-contact {
       padding-top: 5em;
       padding-bottom: 8em; } }
+
+    /* colorlib-services 부분을 display:none으로 숨긴 이후, WHO AM I와 MY SKILLS 사이가 많이 벌어지는 문제를 해결하기 위해 일부 패딩을 아래와 같이 별도로 조정 */
+    /* .colorlib-about { padding-bottom: 6em; } */
+    .colorlib-services { padding-top: 0;  padding-bottom: 0; }
+    .colorlib-skills, .colorlib-education { padding-top: 0; }
+    
+
 
 .author-img {
   background-size: cover;
